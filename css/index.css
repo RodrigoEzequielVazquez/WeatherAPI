@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    background-color: rgb(255, 249, 238);
+}
+
+header {
+    height: 7rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(224, 103, 12, 255);
+}
+
+header h1 {
+    border-bottom: 1px solid rgba(224, 103, 12, 255);
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+header h2 {
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+#searchSubmit {
+    display: flex;
+    justify-content: center;
+    height: 1.5rem;
+}
+
+#searchInput {
+    width: 12rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+#searchButton {
+    border-radius: 0.3rem;
+    width: 4rem;
+    background-color: rgba(224, 103, 12, 255);
+    text-align: center;
+    font-weight: 600;
+}
+
+#searchButton:hover {
+    background-color: white;
+    color: rgba(224, 103, 12, 255);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(224, 103, 12, 255);
+}
+
+#container div {
+    margin-bottom: 1.2rem;
+}
+
+#contenedorshowCity {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#contenedorshowCity img {
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+#contenedorDescIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorDescIcon #weatherIcon {
+    width: 2rem;
+}
+
+#contenedorMinMax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#weatherMin {
+    border-bottom: 1px solid blue;
+    margin-right: 1rem;
+}
+
+#weatherMax {
+    border-bottom: 1px solid red;
+    margin-left: 1rem;
+}
+
+#contenedorDate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorDate img {
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+#contenedorCity {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorCity img {
+    width: 1.4rem;
+    margin-right: 0.5rem;
+}
+
+/* contenedor de la informacion extra */
+
+#containerInfo div  {
+    margin-bottom: 1.2rem;
+}
+
+#containerInfo div img {
+    margin-right: 0.5rem;
+}
+
+#contenedorInfoTitulo {
+    display: flex;
+    justify-content: center;
+}
+
+#contenedorInfoTitulo h2{
+    width: 10rem;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid rgba(224, 103, 12, 255);
+}
+
+#contenedorClouds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorClouds img{
+   width: 1.4rem;
+}
+
+#contenedorHumidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorHumidity img{
+    height: 1.1rem;
+}
+
+#contenedorPressure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorPressure img{
+    width: 2rem;
+}
+
+#contenedorVisibility{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorVisibility img{
+    width: 2rem;
+}
+
+#contenedorWind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorWind img{
+    width: 1.5rem;
+}
+
+
+/* adaptar a los 525 px */
+
+@media screen and (min-width: 525px){
+  
+
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+    }
+
+    body main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #container{
+        width: 50%;
+        padding-top: 1rem;
+        border-bottom: 0;
+        border-top: 1px solid rgba(224, 103, 12, 255);
+        border-right: 1px solid rgba(224, 103, 12, 255);
+    }
+
+    #containerInfo{
+        width: 50%;
+        padding-top: 1rem;
+        border-left: 1px solid rgba(224, 103, 12, 255);
+        border-top: 1px solid rgba(224, 103, 12, 255);
+    }
+
+    #contenedorInfoTitulo{
+        display: flex;
+        align-items: flex-end;
+        
+    }
+
+    #contenedorInfoTitulo h2{
+        margin: 0;
+        
+    }
+
+}

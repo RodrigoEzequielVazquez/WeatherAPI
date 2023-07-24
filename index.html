@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Info Clima</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Info Clima</h1>
+        <h2>Encontra toda la informacion acerca del clima en cualquier ciudad del mundo!!</h2>
+
+    </header>
+
+    <form class="searchSubmit" id="searchSubmit">
+        <input type="text" class="searchInput" id="searchInput" placeholder="Busca una ciudad">
+        <button class="searchButton" id="searchButton">Buscar</button>
+    </form>
+
+    <main>
+        <div id="container">
+
+            <div id="contenedorshowCity">
+                <p id="showCity">
+                </p>
+                <img src="/iconos/ubicacion.png" alt="">
+            </div>
+
+            <div id="contenedorshowTemperature">
+                <p id="showTemperature"></p>
+            </div>
+
+            <div id="contendortemperatureFeelsLike">
+                <p id="temperatureFeelsLike" id="temperatureFeelsLike"></p>
+            </div>
+
+            <div id="contenedorDescIcon">
+                <p id="weatherDescription"></p>
+                <img alt="" id="weatherIcon">
+            </div>
+
+            <div id="contenedorMinMax">
+                <p id="weatherMin"></p>
+                <p id="weatherMax"></p>
+            </div>
+
+            <div id="contenedorDate">
+                <p id="date">
+                </p>
+                <img src="/iconos/caledario.png" alt="">
+            </div>
+
+            <div id="contenedorCity">
+                <p id="timezone">
+                </p>
+                <img src="/iconos/reloj.png" alt="">
+            </div>
+
+        </div>
+
+        <div id="containerInfo">
+
+            <div id="contenedorInfoTitulo">
+                <h2>Mas informacion</h2>
+            </div>
+
+            <div id="contenedorClouds">
+                <img src="/iconos/nubes.png" alt="">
+                <p id="clouds"></p>
+            </div>
+
+            <div id="contenedorHumidity">
+                <img src="/iconos/humedad.png" alt="">
+                <p id="humidity"></p>
+            </div>
+
+            <div id="contenedorPressure">
+                <img src="/iconos/presion.png" alt="">
+                <p id="pressure"></p>
+            </div>
+
+            <div id="contenedorVisibility">
+                <img src="/iconos/visibilidad.png" alt="">
+                <p id="visibility"></p>
+            </div>
+
+            <div id="contenedorWind">
+                <img src="/iconos/viento.png" alt="">
+                <p id="wind"></p>
+            </div>
+            
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
